@@ -1,33 +1,36 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
- * main - function that checks for uppercase character.
- * Return: 0
+ * main -  checks for checks for a digit (0 through 9).
+ * Return: Always 0.
  */
 int main(void)
 {
-	int h = 1;
+	int x;
 
-	while (h <= 100)
+	for (x = 1; x <= 100; x++)
 	{
-		if (h % 3 == 0 && h % 5 == 0)
-			printf("FizzBuzz ");
-		else if (h % 5 == 0)
+		if (x % 3 == 0 || x % 5 == 0)
 		{
-			if (h == 100)
+			if (x % 3 == 0)
+			{
+				printf("Fizz");
+			}
+			if (x % 5 == 0)
 			{
 				printf("Buzz");
-				printf("\n");
 			}
-			else
-				printf("Buzz ");
 		}
-		else if (h % 3 == 0)
-			printf("Fizz ");
 		else
-			printf("%d ", h);
-	h++;
+		{
+			printf("%d", x);
+		}
+		if (x != 100)
+		{
+		putchar(' ');
+		}
 	}
-return (0);
+	putchar('\n');
+	return (0);
 }
+
