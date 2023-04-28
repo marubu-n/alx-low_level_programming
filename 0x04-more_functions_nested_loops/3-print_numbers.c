@@ -1,16 +1,17 @@
 #include "main.h"
 /**
-*print numbers - print 0-9
-*Reurn: void
+*print numbers - function that checks for uppercase character.
+*Reurn: 0
 */
 
 void print_numbers(void)
 {
-	char c;
+	char c = '0';
 
-	for (c = '0'; c <= '9'; c++)
+	while (c <= '9')
 	{
 		_putchar(c);
+		c++;
 	}
-	_putchar('\n');
+_putchar('\n');
 }
