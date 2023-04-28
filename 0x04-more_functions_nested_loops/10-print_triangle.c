@@ -1,10 +1,13 @@
 #include "main.h"
+
 /**
-*print triangle - prints a triangle, followed by a new line
-*@Size: size of the triangle
+* print_triangle - Function that prints a triangle, followed by a new line.
+* @size: the int for the paramaters of my function
+* Return: Always 0.
 */
 
-void print_triangle (int size)
+void print_triangle(int size)
+
 {
 	if (size <= 0)
 	{
@@ -13,6 +16,7 @@ void print_triangle (int size)
 	else
 	{
 		int i, j;
+
 		for (i = 1; i <= size; i++)
 		{
 			for (j = i; j < size; j++)

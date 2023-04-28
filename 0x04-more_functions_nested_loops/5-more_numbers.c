@@ -1,15 +1,16 @@
 #include "main.h"
 /**
-*_is -
 *more_numbers - print more numbers
+*Retuen: 0
 */
 
 void more_numbers(void)
 {
 	int i, j;
+
 	for (i = 1; i <= 10; i++)
 	{
-		for (j = 0; j <=14; j++)
+		for (j = 0; j <= 14; j++)
 		{
 			if (j >= 10)
 				_putchar('1');
